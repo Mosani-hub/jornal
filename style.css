@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 0.5em;
+}
+
+header nav a {
+    color: #ddd;
+    margin: 0 1em;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Estilo da Seção de Destaques */
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 1em;
+    background-color: #f4f4f4;
+}
+
+.principal {
+    flex: 2;
+}
+
+.principal img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.principal h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0.5em;
+}
+
+.secundarias {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.secundarias article {
+    background-color: #fff;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.secundarias article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.secundarias h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 0.5em;
+}
+
+/* Estilo das Notícias em Lista */
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    background-color: #fff;
+}
+
+.noticias article {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.noticias h3 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .destaques {
+        flex-direction: column;
+    }
+
+    .secundarias {
+        flex-direction: row;
+        gap: 0.5em;
+    }
+}
